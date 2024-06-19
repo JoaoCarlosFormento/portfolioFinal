@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #9575DE;
+    --cor-terciaria: #6527BE;
+    --cor-header: #101010;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, var(--cor-primaria), rgb(27, 27, 27));
+
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divisao{
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-terciaria);
+    box-shadow: 0px 0px 20px var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 30px;
+}
+.titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 7px var(--cor-terciaria);
+}
+.login{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 300px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 4px var(--cor-secundaria);
+    transition: .8s;
+}
+.login:hover{
+    background-color: var(--cor-header);
+}
+.botao{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.1rem;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    border: 2px solid var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    transition: .8s;
+    box-shadow: 0px 0px 5px var(--cor-terciaria);
+}
+.botao:hover{
+    color: var(--cor-terciaria);
+    background-color: var(--cor-header);
+}
+.textoCadastro{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}

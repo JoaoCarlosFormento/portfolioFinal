@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #9575DE;
+    --cor-terciaria: #6527BE;
+    --cor-quarternaria: rgb(189, 186, 190);
+    --cor-header: #101010;
+
+    --cor-primaria-light: #d7d7d7;
+    --cor-secundaria-light: rgb(42, 148, 132);
+    --cor-terciaria-light: rgb(30, 174, 153);
+    --cor-quarternaria-light: rgb(96, 96, 96);
+    --cor-header-light: #c7c7c7;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    transition: .5s;
+}
+
+header{
+    height: 12.5vh;
+    width: 100%;
+    border-bottom: 2px solid var(--cor-terciaria);
+    background-color: var(--cor-header);
+    position: sticky;
+    top: 0;
+    animation: aparecer 2s;
+    transition: .5s;
+}
+
+.nav-header{
+    height: 12.5vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 4%;
+}
+
+.navigation{
+    display: flex;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    align-items: center;
+    transition: .5s;
+}
+
+main{
+    height: 87.5vh;
+    width: 96vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    cursor: default;
+    padding: 0% 1% 0% 1%;
+}
+
+.division{
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    animation: opacidade 2s ease-in;
+    transition: .5s;
+}
+
+.main-title{
+    font-size: 2.25rem;
+}
+
+strong{
+    color: var(--cor-terciaria);
+    border: 1px solid;
+    padding: 1px;
+    border-style:dashed;
+    transition: 0.5s;    
+}
+
+span{
+    transition: .5s;
+    color: var(--cor-quarternaria);
+}
+
+.paragraph{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.contato{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: .5s;
+}
+
+.texto-animado{
+    font-size: 1.5rem;
+    color: var(--cor-quarternaria);
+    transition: .5s;
+}
+
+.texto-animado span{
+    position: relative;
+}
+
+.texto-animado span::before{
+    content: "";
+    color: var(--cor-terciaria);
+    animation: palavras 15s infinite;
+    transition: .5s;
+}
+
+.texto-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 15px);
+    border-left: 2px solid var(--cor-terciaria);
+    right: -10px;
+    animation: cursor 1s infinite, digita 15s steps(20) infinite;
+    background-color: var(--cor-primaria);
+    transition: .5s;
+}
+
+.image{
+    width: 373px;
+    height: 438px;
+    border: 5px solid var(--cor-terciaria);
+    border-radius: 50px;
+    transition: .5s;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
+    transition: .5s;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 35vw;
+}
+.area-contatos{
+    display: flex;
+    width: 370px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+}
+.botao-contatos{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    animation: opacidade ease-out 3s;
+    text-decoration: none;
+}
+#botao-linkedin{
+    background-color: rgb(52, 121, 211);
+}
+#botao-github{
+    background-color: rgb(50, 51, 50);
+}
+#botao-whatsapp{
+    background-color: rgb(55, 182, 55);
+}
+.botao-contatos:hover{
+    width: 120px;
+    height: 120px;
+}
+.icons{
+    max-width: 70px;
+    max-height: 70px;
+    transition: .8s;
+}
+.botao-contatos:hover .icons{
+    max-width: 90px;
+    max-height: 90px;
+}
+#main-formulario{
+    justify-content: center;
+}
+.div-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.recado-input{
+    width: 400px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cor-header);
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    transition: .5s;
+}
+#recado{
+    background-color: var(--cor-header);
+    outline: none;
+    border: none;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    resize: none;
+    border-radius: 20px;
+    text-align: center;
+    overflow-y: hidden;
+    transition: .5s;
+}
+#botao-formulario{
+    background-color: var(--cor-header);
+    color: var(--cor-secundaria);
+    border: none;
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    transition: .5s;
+}
+@keyframes aparecer {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacidade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes digita {
+    12.5%, 18.75%, 37.50%, 43.75%, 62.5%, 68.75%, 87.50%, 93.75%{
+        width: 0;
+    }
+    6.25%, 25%, 31.25%, 50%, 56.25%, 75%, 81.25%{
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid var(--cor-primaria);
+    }
+}
+
+@keyframes palavras {
+    0%, 25%{
+        content: "gostou do que viu?";
+    }
+    26%, 50%{
+        content: "se interessou?";
+    }
+    51%, 75%{
+        content: "quer entrar em contato?";
+    }
+    76%, 100%{
+        content: "entrou em contato?";
+    }
+}

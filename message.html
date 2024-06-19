@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleTheme.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+            <a class="navigation" href="home.html">Home</a>
+            <a class="navigation" href="aboutMe.html">Sobre mim</a>
+            <a class="navigation" href="contatos.html">Contatos</a>
+            <a class="navigation" href="#">Deixar recado</a>
+            <div class="trilho" id="trilho">
+                <div class="interruptor"></div>
+            </div>
+        </nav>
+    </header>
+    <main id="main-formulario">
+        <section class="main-section">
+            <div class="div-formulario">
+                <h1 class="main-title">Deixe um recado!</h1>
+                <form class="formulario" netlify>
+                    <input class="recado-input" type="text" placeholder="Nome completo">
+                    <input class="recado-input" type="text" placeholder="E-mail">
+                    <input class="recado-input" type="text" placeholder="Empresa">
+                    <textarea id="recado" maxlength="200" cols="20" rows="10" placeholder="Deixe o seu recado:"></textarea>
+                    <button id="botao-formulario" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Em desenvolvimento</p>
+    </footer>
+</body>
+</html>

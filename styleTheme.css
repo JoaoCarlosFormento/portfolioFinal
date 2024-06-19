@@ -1,0 +1,91 @@
+.trilho{
+    width: 80px;
+    height: 35px;
+    background-color: #212121;
+    border-radius: 80px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.trilho .interruptor{
+    height: 35px;
+    width: 35px;
+    background-image: linear-gradient(to bottom right, var(--cor-terciaria), #9c5bf6) ;
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.light{
+    background-color: rgb(188, 188, 188);
+}
+
+.trilho.light .interruptor{
+    left: 45px;
+    background-color: var(--cor-terciaria-light);
+    background-image: linear-gradient(to bottom right, var(--cor-terciaria-light), rgb(50, 232, 205)) ;
+}
+
+body.light{
+    background-color: var(--cor-primaria-light);
+    color: var(--cor-secundaria-light);
+}
+body.light header{
+    background-color: var(--cor-header-light);
+    border-color: var(--cor-terciaria-light);
+}
+body.light .navigation{
+    color: var(--cor-terciaria-light);
+}
+body.light .buttons{
+    color: var(--cor-terciaria-light);
+    border-color: var(--cor-terciaria-light);
+}
+body.light #button-left:hover,body.light #button-right:hover{
+    color: var(--cor-secundaria-light);
+    background-color: var(--cor-header-light);
+}
+body.light .main-section{
+    color: var(--cor-secundaria-light);
+}
+body.light strong{
+    color: var(--cor-terciaria-light);
+}
+body.light span{
+    color: var(--cor-quarternaria-light)
+}
+body.light .contato{
+    color: var(--cor-secundaria-light);
+}
+body.light .texto-animado{
+    color: var(--cor-quarternaria-light)
+}
+body.light .texto-animado span::before{
+    color: var(--cor-terciaria-light)
+}
+body.light .texto-animado span::after{
+    border-color: var(--cor-terciaria-light);
+    background-color: var(--cor-primaria-light);
+}
+body.light .image{
+    border-color: var(--cor-terciaria-light);
+}
+body.light footer{
+    background-color: var(--cor-terciaria-light);
+    color: var(--cor-primaria-light);
+}
+body.light .recado-input{
+    background-color: var(--cor-header-light);
+    color: var(--cor-secundaria-light);
+}
+body.light #recado{
+    background-color: var(--cor-header-light);
+    color: var(--cor-secundaria-light);
+}
+body.light #botao-formulario{
+    background-color: var(--cor-header-light);
+    color: var(--cor-secundaria-light);
+}
